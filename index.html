@@ -4,92 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mansi Patil | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mansi Patil</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container text-center">
-            <h1>Hi, I'm Mansi Patil</h1>
-            <p>Business Analyst | Data Scientist | Web Developer</p>
-            <a href="#contact" class="btn btn-primary">Hire Me</a>
-        </div>
-    </header>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>P-Ninja Infotech | Business Analyst</h3>
-                    <p>Aug 2023 - Present</p>
+    <div class="container profile-section" data-aos="fade-down">
+        <h1 class="profile-name">Mansi Patil</h1>
+        <p class="profile-title">Business Analyst | Data Scientist | Web Developer</p>
+        <img src="IMG_0902.jpeg" alt="Mansi Patil" class="profile-img">
+    </div>
+    
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Experience</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-right">
+                <div class="card-custom">
+                    <h5>Business Analyst, P-Ninja Infotech</h5>
+                    <p><strong>August 2023 – Present</strong></p>
                     <ul>
-                        <li>Led a sales optimization project analyzing 500,000+ records.</li>
-                        <li>Designed a dynamic pricing model using SQL and Python.</li>
-                        <li>Developed a predictive analytics model for demand forecasting.</li>
+                        <li>Led a sales optimization project analyzing 500,000+ records, improving efficiency by 15%.</li>
+                        <li>Designed a dynamic pricing model using SQL and Python, increasing customer acquisition by 20%.</li>
+                        <li>Developed a predictive analytics model forecasting demand trends with 85% accuracy.</li>
+                        <li>Engineered ETL pipelines, reducing data transfer latency by 25%.</li>
+                        <li>Integrated RESTful APIs to enhance cross-platform data flow.</li>
                     </ul>
                 </div>
-                <div class="timeline-item">
-                    <h3>Invictus Web Solutions | Web Development Intern</h3>
-                    <p>Mar 2023 - Jul 2023</p>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-left">
+                <div class="card-custom">
+                    <h5>Management Associate, Metvy</h5>
+                    <p><strong>March 2023 – July 2023</strong></p>
                     <ul>
-                        <li>Built and optimized 10+ responsive websites.</li>
-                        <li>Collaborated on backend development with PHP and MySQL.</li>
+                        <li>Organized and scheduled mentorship programs for 50+ participants.</li>
+                        <li>Maintained participant records and moderated speaker sessions.</li>
+                        <li>Monitored and provided constructive feedback to participants.</li>
+                        <li>Coordinated with Core Heads for program improvements.</li>
+                        <li>Prepared progress reports and addressed participant queries.</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill"><i class="fab fa-python"></i> Python</div>
-                <div class="skill"><i class="fas fa-database"></i> SQL</div>
-                <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
-                <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-                <div class="skill"><i class="fab fa-css3"></i> CSS</div>
-                <div class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+    </div>
+    
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Freelancing</h2>
+        <div class="row">
+            <div class="col-md-12" data-aos="fade-up">
+                <div class="card-custom">
+                    <h5>LinkedIn Personal Branding Strategist</h5>
+                    <ul>
+                        <li>Strategized and managed LinkedIn branding for 18+ international and domestic clients.</li>
+                        <li>Developed data-driven content strategies, improving profile visibility by 35% and engagement by 40%.</li>
+                        <li>Optimized client profiles with personalized consultations for audience targeting and content creation.</li>
+                        <li>Helped clients secure professional opportunities and build partnerships.</li>
+                        <li>Built a personal LinkedIn following of over 7,500, showcasing expertise in audience engagement.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container text-center">
-            <h2>Contact Me</h2>
-            <p>Email: mansianilpatil2425@gmail.com</p>
-            <p>Phone: 8767248692</p>
-            <a href="mailto:mansianilpatil2425@gmail.com" class="btn btn-primary">Send Email</a>
+    </div>
+    
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Organizations</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-right">
+                <div class="card-custom">
+                    <h5>Rotaract Club</h5>
+                    <p><strong>May 2022 – Present</strong></p>
+                    <ul>
+                        <li>Organized community service initiatives, including blood donation drives.</li>
+                        <li>Collaborated on cleanliness drives and awareness campaigns.</li>
+                        <li>Coordinated fundraising activities for charitable projects.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-left">
+                <div class="card-custom">
+                    <h5>TEDx MGMU</h5>
+                    <p><strong>August 2022 – February 2023</strong></p>
+                    <ul>
+                        <li>Managed a team of 90 students for event execution.</li>
+                        <li>Supervised speaker speech editing to meet TEDx standards.</li>
+                        <li>Handled a budget of ₹9 lakhs for event resources.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Contact</h2>
+        <p>Email: <a href="mailto:mansianilpatil2425@gmail.com">mansianilpatil2425@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/MansiPatil" target="_blank">linkedin.com/in/MansiPatil</a></p>
+        <p>Phone: 8767248692</p>
+    </div>
+    
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
