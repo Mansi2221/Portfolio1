@@ -9,75 +9,85 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f4f4f4; /* Light Gray Background */
-            color: #2c3e50; /* Dark Grayish Blue for Text */
-        }
-        .section {
-            padding: 80px 0;
-        }
-        /* Background colors for each section */
-        .profile-section {
-            background-color: #2980b9; /* Muted Teal */
-            color: #ffffff;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .education {
-            background-color: #ffffff; /* White Background */
-            color: #2c3e50;
-        }
-        .skills {
-            background-color: #ecf0f1; /* Light Gray for Skills Section */
-            color: #2c3e50;
-        }
-        .experience {
-            background-color: #ffffff; /* White Background */
-            color: #2c3e50;
-        }
-        .freelancing {
-            background-color: #ecf0f1; /* Light Gray */
-            color: #2c3e50;
-        }
-        .organizations {
-            background-color: #ffffff; /* White Background */
-            color: #2c3e50;
-        }
-        .contact-section {
-            background-color: #2980b9; /* Muted Teal */
-            color: #ffffff;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .card-custom {
-            background: #ffffff; /* White Background for Cards */
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .card-custom:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #ffffff;
-            margin-bottom: 20px;
-        }
-        h1, h2 {
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-        }
-        .profile-title {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.2rem;
-        }
-    </style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F4F4F4; /* Light gray background */
+        color: #333333; /* Dark gray text color */
+        margin: 0;
+        padding: 0;
+    }
+    .section {
+        padding: 80px 20px;
+    }
+    .profile-section {
+        background-color: #ffffff; /* White background for profile section */
+        text-align: center;
+        padding: 100px 20px;
+    }
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #333333; /* Dark gray border around the image */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        transition: all 0.3s ease-in-out;
+    }
+    .profile-img:hover {
+        transform: scale(1.1); /* Image zoom effect on hover */
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    }
+    h1, h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+    }
+    .profile-title {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        color: #888; /* Subtle gray text */
+    }
+    .card-custom {
+        background: #ffffff; /* White background for cards */
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for cards */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card-custom:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+    }
+    .education, .experience, .freelancing, .organizations {
+        background-color: #ffffff; /* White background for each section */
+        color: #333333;
+    }
+    .contact-section {
+        background-color: #333333; /* Dark background for contact section */
+        color: #ffffff;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .container h2 {
+        font-family: 'Lato', sans-serif;
+        color: #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .container p, .container li {
+        font-size: 1rem;
+        color: #888; /* Light gray text for descriptions */
+    }
+    a {
+        text-decoration: none;
+        color: #4A90E2; /* Muted blue links */
+    }
+    a: hover {
+        color: #333333; /* Darker link color on hover */
+    }
+</style>
+
 </head>
 <body>
     
