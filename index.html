@@ -40,63 +40,67 @@
             border: 5px solid #00bcd4;
             margin-bottom: 20px;
         }
-        h2 {
-            text-align: center;
-            font-weight: bold;
-            animation: fadeIn 1s ease-in-out;
-        }
-        .education h2 { color: #ffcc00; }
-        .skills h2 { color: #ff6666; }
-        .experience h2 { color: #66ccff; }
-        .organizations h2 { color: #66ff66; }
-        .contact-section h2 { color: #ff99cc; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .skills-icons img {
+            width: 50px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
+    
     <div class="container profile-section" data-aos="fade-down">
         <h1 class="profile-name">Mansi Patil</h1>
         <p class="profile-title">Business Analyst | Data Scientist | Web Developer | Freelancing Strategist</p>
         <img src="IMG_0902.jpeg" alt="Mansi Patil" class="profile-img">
     </div>
     
-    <div class="container section education">
-        <h2 data-aos="fade-up">Education</h2>
-        <div class="card-custom" data-aos="fade-up">
-            <h5>MGM's Jawaharlal Nehru Engineering College</h5>
-            <p><strong>B.Tech Electronics & Telecommunication Engineering</strong></p>
-            <p>CGPA: 8.41/10</p>
-            <p>Relevant Coursework: Python Programming, Deep Learning & AI, Statistics, Calculus, Linear Algebra</p>
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Skills</h2>
+        <div class="text-center skills-icons">
+            <img src="python.png" alt="Python">
+            <img src="sql.png" alt="SQL">
+            <img src="tableau.png" alt="Tableau">
+            <img src="powerbi.png" alt="Power BI">
+            <img src="reactjs.png" alt="React.js">
         </div>
     </div>
     
-    <div class="container section skills">
-        <h2 data-aos="fade-up">Skills</h2>
-        <p>Python, R, SQL, VBA, TensorFlow, PyTorch, HTML, CSS, JavaScript, PHP, Bootstrap, React.js, Angular, Tableau, Power BI, Google Data Studio, AWS, GCP, MySQL, PostgreSQL, Microsoft SQL Server, Oracle DB, SAS, SPSS, Excel (Pivot Tables, VBA), Google Analytics.</p>
-    </div>
-    
-    <div class="container section experience">
-        <h2 data-aos="fade-up">Professional Experience</h2>
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Professional Experience</h2>
         <div class="card-custom" data-aos="fade-right">
             <h5>Business Analyst, P-Ninja Infotech</h5>
             <p>August 2023 – Present</p>
-            <p>Led multiple analytics projects improving decision-making, sales, and inventory management.</p>
+            <p>- Led multiple analytics projects improving decision-making, sales, and inventory management.</p>
+        </div>
+        <div class="card-custom" data-aos="fade-left">
+            <h5>Web Development Intern, Invictus Web Solutions</h5>
+            <p>March 2023 – July 2023</p>
+            <p>- Developed responsive websites, implemented backend solutions, and enhanced SEO.</p>
         </div>
     </div>
     
-    <div class="container section organizations">
-        <h2 data-aos="fade-up">Organizations</h2>
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Organizations</h2>
         <div class="card-custom" data-aos="fade-right">
             <h5>Volunteer, Rotaract Club</h5>
-            <p>Organized social initiatives, including fundraising and environmental awareness campaigns.</p>
+            <p>- Organized social initiatives, including fundraising and environmental awareness campaigns.</p>
+        </div>
+        <div class="card-custom" data-aos="fade-left">
+            <h5>Executive Producer, TEDx MGMU</h5>
+            <p>- Managed a ₹9 lakh budget and led a team of 90 students.</p>
+        </div>
+    </div>
+    
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Freelancing</h2>
+        <div class="card-custom" data-aos="fade-right">
+            <h5>Founder, Berry Blend Socials</h5>
+            <p>- Handled LinkedIn personal branding for multiple clients, increasing engagement and reach.</p>
         </div>
     </div>
     
     <div class="container section contact-section" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2 class="text-center mb-4">Contact</h2>
         <p>Email: <a href="mailto:mansianilpatil2425@gmail.com">mansianilpatil2425@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/MansiPatil" target="_blank">linkedin.com/in/MansiPatil</a></p>
         <p>Phone: 8767248692</p>
