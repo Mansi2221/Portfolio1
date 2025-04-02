@@ -8,17 +8,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0d0d0d;
-            color: #ffffff;
+            font-family: 'Montserrat', sans-serif; /* Content font */
+            background-color: #f4f3ee; /* Very Light Beige */
+            color: #463f3a; /* Dark Brown */
+        }
+        h1, h2, h5 {
+            font-family: 'Lato', sans-serif; /* Heading font */
         }
         .section {
             padding: 80px 0;
         }
         .card-custom {
-            background: #1a1a1a;
+            background: #8a817c; /* Muted Brown */
             border-radius: 15px;
             padding: 30px;
             box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
@@ -37,7 +44,7 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #00bcd4;
+            border: 5px solid #e0afa0; /* Muted Peach */
             margin-bottom: 20px;
         }
         h2 {
@@ -45,12 +52,12 @@
             font-weight: bold;
             animation: fadeIn 1s ease-in-out;
         }
-        .education h2 { color: #ffcc00; }
-        .skills h2 { color: #ff6666; }
-        .experience h2 { color: #66ccff; }
-        .organizations h2 { color: #66ff66; }
-        .contact-section h2 { color: #ff99cc; }
-        .freelancing h2 { color: #ff6600; }
+        .education h2 { color: #bcb8b1; } /* Light Gray */
+        .skills h2 { color: #e0afa0; } /* Muted Peach */
+        .experience h2 { color: #463f3a; } /* Dark Brown */
+        .organizations h2 { color: #8a817c; } /* Muted Brown */
+        .contact-section h2 { color: #bcb8b1; } /* Light Gray */
+        .freelancing h2 { color: #e0afa0; } /* Muted Peach */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -118,3 +125,4 @@
     </script>
 </body>
 </html>
+
