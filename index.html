@@ -8,24 +8,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
-
     <style>
         body {
-            font-family: 'Montserrat', sans-serif; /* Content font */
+            font-family: 'Poppins', sans-serif;
             background-color: #f4f3ee; /* Very Light Beige */
             color: #463f3a; /* Dark Brown */
-        }
-        h1, h2, h5 {
-            font-family: 'Lato', sans-serif; /* Heading font */
         }
         .section {
             padding: 80px 0;
         }
+        /* Background colors for each section */
+        .profile-section {
+            background-color: #e0afa0; /* Muted Peach */
+            color: #463f3a; /* Dark Brown */
+        }
+        .education {
+            background-color: #8a817c; /* Muted Brown */
+            color: #ffffff;
+        }
+        .skills {
+            background-color: #463f3a; /* Dark Brown */
+            color: #f4f3ee; /* Very Light Beige */
+        }
+        .experience {
+            background-color: #e0afa0; /* Muted Peach */
+            color: #463f3a; /* Dark Brown */
+        }
+        .freelancing {
+            background-color: #8a817c; /* Muted Brown */
+            color: #ffffff;
+        }
+        .organizations {
+            background-color: #463f3a; /* Dark Brown */
+            color: #f4f3ee; /* Very Light Beige */
+        }
+        .contact-section {
+            background-color: #e0afa0; /* Muted Peach */
+            color: #463f3a; /* Dark Brown */
+        }
         .card-custom {
-            background: #8a817c; /* Muted Brown */
+            background: #1a1a1a;
             border-radius: 15px;
             padding: 30px;
             box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
@@ -35,36 +57,18 @@
             transform: translateY(-10px);
             box-shadow: 0px 6px 25px rgba(255, 255, 255, 0.15);
         }
-        .profile-section {
-            text-align: center;
-            padding: 100px 20px;
-        }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #e0afa0; /* Muted Peach */
+            border: 5px solid #00bcd4;
             margin-bottom: 20px;
-        }
-        h2 {
-            text-align: center;
-            font-weight: bold;
-            animation: fadeIn 1s ease-in-out;
-        }
-        .education h2 { color: #bcb8b1; } /* Light Gray */
-        .skills h2 { color: #e0afa0; } /* Muted Peach */
-        .experience h2 { color: #463f3a; } /* Dark Brown */
-        .organizations h2 { color: #8a817c; } /* Muted Brown */
-        .contact-section h2 { color: #bcb8b1; } /* Light Gray */
-        .freelancing h2 { color: #e0afa0; } /* Muted Peach */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
+    
     <div class="container profile-section" data-aos="fade-down">
         <h1 class="profile-name">Mansi Patil</h1>
         <p class="profile-title">Business Analyst | Data Scientist | Web Developer | Freelancing Strategist</p>
@@ -72,7 +76,7 @@
     </div>
     
     <div class="container section education">
-        <h2 data-aos="fade-up">Education</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Education</h2>
         <div class="card-custom" data-aos="fade-up">
             <h5>MGM's Jawaharlal Nehru Engineering College</h5>
             <p><strong>B.Tech Electronics & Telecommunication Engineering</strong></p>
@@ -82,21 +86,36 @@
     </div>
     
     <div class="container section skills">
-        <h2 data-aos="fade-up">Skills</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Skills</h2>
         <p>Python, R, SQL, VBA, TensorFlow, PyTorch, HTML, CSS, JavaScript, PHP, Bootstrap, React.js, Angular, Tableau, Power BI, Google Data Studio, AWS, GCP, MySQL, PostgreSQL, Microsoft SQL Server, Oracle DB, SAS, SPSS, Excel (Pivot Tables, VBA), Google Analytics.</p>
     </div>
     
     <div class="container section experience">
-        <h2 data-aos="fade-up">Professional Experience</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Professional Experience</h2>
         <div class="card-custom" data-aos="fade-right">
             <h5>Business Analyst, P-Ninja Infotech</h5>
             <p>August 2023 – Present</p>
             <p>Led multiple analytics projects improving decision-making, sales, and inventory management.</p>
         </div>
+        <div class="card-custom" data-aos="fade-left">
+            <h5>Web Development Intern, Invictus Web Solutions</h5>
+            <p>March 2023 – July 2023</p>
+            <p>Developed responsive websites, implemented backend solutions, and enhanced SEO.</p>
+        </div>
+        <div class="card-custom" data-aos="fade-right">
+            <h5>Management Associate, Metvy</h5>
+            <p>July 2022 – December 2022</p>
+            <p>Organized mentorship programs, moderated speaker sessions, and improved program quality.</p>
+        </div>
+        <div class="card-custom" data-aos="fade-left">
+            <h5>Data Analytics Intern, Patni Capital</h5>
+            <p>January 2022 – April 2022</p>
+            <p>Cleaned and analyzed datasets, producing actionable business insights.</p>
+        </div>
     </div>
     
     <div class="container section freelancing">
-        <h2 data-aos="fade-up">Freelancing</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Freelancing</h2>
         <div class="card-custom" data-aos="fade-right">
             <h5>LinkedIn Personal Branding Strategist</h5>
             <p>Strategized and managed LinkedIn branding for 18+ international and domestic clients.</p>
@@ -106,15 +125,23 @@
     </div>
     
     <div class="container section organizations">
-        <h2 data-aos="fade-up">Organizations</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Organizations</h2>
         <div class="card-custom" data-aos="fade-right">
             <h5>Volunteer, Rotaract Club</h5>
             <p>Organized social initiatives, including fundraising and environmental awareness campaigns.</p>
         </div>
+        <div class="card-custom" data-aos="fade-left">
+            <h5>Event Head, Razmattaz Cultural Event</h5>
+            <p>Managed ₹15 lakh budget and led 50+ volunteers.</p>
+        </div>
+        <div class="card-custom" data-aos="fade-right">
+            <h5>Executive Producer, TEDx MGMU</h5>
+            <p>Managed a ₹9 lakh budget and led a team of 90 students.</p>
+        </div>
     </div>
     
     <div class="container section contact-section" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2 class="text-center mb-4">Contact</h2>
         <p>Email: <a href="mailto:mansianilpatil2425@gmail.com">mansianilpatil2425@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/MansiPatil" target="_blank">linkedin.com/in/MansiPatil</a></p>
         <p>Phone: 8767248692</p>
