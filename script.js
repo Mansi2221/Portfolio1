@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
+    const skills = document.querySelectorAll(".skill");
+    skills.forEach(skill => {
+        skill.addEventListener("mouseover", () => {
+            skill.style.transform = "scale(1.2)";
+        });
+        skill.addEventListener("mouseout", () => {
+            skill.style.transform = "scale(1)";
+        });
     });
 });
