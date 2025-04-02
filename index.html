@@ -8,7 +8,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .card-custom {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 25px rgba(255, 255, 255, 0.15);
+        }
+        .profile-section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00bcd4;
+            margin-bottom: 20px;
+        }
+        .skills-section img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container profile-section" data-aos="fade-down">
@@ -18,7 +55,19 @@
     </div>
     
     <div class="container section">
-        <h2 class="text-center mb-4" data-aos="fade-up">Experience</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Skills</h2>
+        <div class="text-center skills-section">
+            <img src="python-logo.png" alt="Python">
+            <img src="sql-logo.png" alt="SQL">
+            <img src="powerbi-logo.png" alt="Power BI">
+            <img src="tableau-logo.png" alt="Tableau">
+            <img src="excel-logo.png" alt="Excel">
+            <img src="webdev-logo.png" alt="Web Development">
+        </div>
+    </div>
+    
+    <div class="container section">
+        <h2 class="text-center mb-4" data-aos="fade-up">Experience & Internships</h2>
         <div class="row">
             <div class="col-md-6 mb-4" data-aos="fade-right">
                 <div class="card-custom">
@@ -28,8 +77,6 @@
                         <li>Led a sales optimization project analyzing 500,000+ records, improving efficiency by 15%.</li>
                         <li>Designed a dynamic pricing model using SQL and Python, increasing customer acquisition by 20%.</li>
                         <li>Developed a predictive analytics model forecasting demand trends with 85% accuracy.</li>
-                        <li>Engineered ETL pipelines, reducing data transfer latency by 25%.</li>
-                        <li>Integrated RESTful APIs to enhance cross-platform data flow.</li>
                     </ul>
                 </div>
             </div>
@@ -41,62 +88,14 @@
                         <li>Organized and scheduled mentorship programs for 50+ participants.</li>
                         <li>Maintained participant records and moderated speaker sessions.</li>
                         <li>Monitored and provided constructive feedback to participants.</li>
-                        <li>Coordinated with Core Heads for program improvements.</li>
-                        <li>Prepared progress reports and addressed participant queries.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container section">
-        <h2 class="text-center mb-4" data-aos="fade-up">Freelancing</h2>
-        <div class="row">
-            <div class="col-md-12" data-aos="fade-up">
-                <div class="card-custom">
-                    <h5>LinkedIn Personal Branding Strategist</h5>
-                    <ul>
-                        <li>Strategized and managed LinkedIn branding for 18+ international and domestic clients.</li>
-                        <li>Developed data-driven content strategies, improving profile visibility by 35% and engagement by 40%.</li>
-                        <li>Optimized client profiles with personalized consultations for audience targeting and content creation.</li>
-                        <li>Helped clients secure professional opportunities and build partnerships.</li>
-                        <li>Built a personal LinkedIn following of over 7,500, showcasing expertise in audience engagement.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container section">
-        <h2 class="text-center mb-4" data-aos="fade-up">Organizations</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-right">
-                <div class="card-custom">
-                    <h5>Rotaract Club</h5>
-                    <p><strong>May 2022 – Present</strong></p>
-                    <ul>
-                        <li>Organized community service initiatives, including blood donation drives.</li>
-                        <li>Collaborated on cleanliness drives and awareness campaigns.</li>
-                        <li>Coordinated fundraising activities for charitable projects.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4" data-aos="fade-left">
-                <div class="card-custom">
-                    <h5>TEDx MGMU</h5>
-                    <p><strong>August 2022 – February 2023</strong></p>
-                    <ul>
-                        <li>Managed a team of 90 students for event execution.</li>
-                        <li>Supervised speaker speech editing to meet TEDx standards.</li>
-                        <li>Handled a budget of ₹9 lakhs for event resources.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container section">
-        <h2 class="text-center mb-4" data-aos="fade-up">Contact</h2>
+    <div class="container section contact-section" data-aos="fade-up">
+        <h2 class="text-center mb-4">Contact</h2>
         <p>Email: <a href="mailto:mansianilpatil2425@gmail.com">mansianilpatil2425@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/MansiPatil" target="_blank">linkedin.com/in/MansiPatil</a></p>
         <p>Phone: 8767248692</p>
